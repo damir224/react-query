@@ -4,3 +4,7 @@ export interface IPerson {
   birth_year: string;
 
 }
+export interface IPeopleQuery {
+  id: string;
+
+}
