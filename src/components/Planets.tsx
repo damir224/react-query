@@ -7,7 +7,7 @@ import Planet from './Planet';
 const Planets = () => {
   const [page, setPage] = useState<string>('1')
   const { data, status } = useQuery(['planet', page], fetchPlanets, {
-    staleTime: 300000,
+    // staleTime: 300000,
     onSuccess: () => console.log('no problema with Planets'),
   });
   return (
